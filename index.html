@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Addiction Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-container-header">
+                <div class="icon-wrapper">
+                    <div class="logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="12" y="4" width="16" height="28" rx="3" stroke="white" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="29" r="1.5" fill="white"/>
+                            <line x1="16" y1="8" x2="24" y2="8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M8 16 L12 20 L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M32 16 L28 20 L32 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <h1>Mobile Addiction Assessment</h1>
+                <p>Complete this comprehensive assessment to understand your mobile phone usage patterns and receive personalized insights.</p>
+            </div>
+            <form id="addictionForm">
+            <div class="form-card">
+                <div class="card-header">
+                    <h2><span class="icon">👤</span> Personal Information</h2>
+                    <p class="card-description">Basic demographic information</p>
+                </div>
+                <div class="card-content">
+                    <div class="form-row personal">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" min="13" max="100" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender:</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <div class="card-header">
+                    <h2><span class="icon">📱</span> Phone Usage Habits</h2>
+                    <p class="card-description">Questions about your daily phone usage patterns</p>
+                </div>
+                <div class="card-content">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Do you use your phone for class notes?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="usePhoneForClassNotes" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="usePhoneForClassNotes" value="No"> No</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Do you buy/access books from your phone?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="buyBooksFromPhone" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="buyBooksFromPhone" value="No"> No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Does your phone's battery last a day?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="batteryLastsDay" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="batteryLastsDay" value="No"> No</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Do you run for charger when battery dies?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="runForCharger" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="runForCharger" value="No"> No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Do you worry about losing your phone?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="worryAboutLosingPhone" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="worryAboutLosingPhone" value="No"> No</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Do you take your phone to the bathroom?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="takePhoneToBathroom" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="takePhoneToBathroom" value="No"> No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <div class="card-header">
+                    <h2><span class="icon">🧭</span> Behavioral Patterns</h2>
+                    <p class="card-description">Questions about your behavioral patterns with your phone</p>
+                </div>
+                <div class="card-content">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Do you use phone in social gatherings?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="usePhoneInSocialGatherings" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="usePhoneInSocialGatherings" value="No"> No</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>How often do you check phone without notification?</label>
+                            <select name="checkPhoneWithoutNotification" required>
+                                <option value="Never">Never</option>
+                                <option value="Rarely" selected>Rarely</option>
+                                <option value="Sometimes">Sometimes</option>
+                                <option value="Often">Often</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Check phone before sleep/after waking?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="checkPhoneBeforeSleepAfterWaking" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="checkPhoneBeforeSleepAfterWaking" value="No"> No</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Keep phone next to you while sleeping?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="keepPhoneNextToWhileSleeping" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="keepPhoneNextToWhileSleeping" value="No"> No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Check emails/calls/texts during class?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="checkEmailsCallsTextsDuringClass" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="checkEmailsCallsTextsDuringClass" value="No"> No</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Rely on phone in awkward situations?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="relyOnPhoneInAwkwardSituations" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="relyOnPhoneInAwkwardSituations" value="No"> No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>On phone while watching TV/eating?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="onPhoneWhileWatchingTvEating" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="onPhoneWhileWatchingTvEating" value="No"> No</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Panic attack if phone left elsewhere?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="panicAttackIfPhoneLeftElsewhere" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="panicAttackIfPhoneLeftElsewhere" value="No"> No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Do you check your phone when spending time with someone?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="checkPhoneWithSomeone" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="checkPhoneWithSomeone" value="No"> No</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneUseForPlayingGames">Hours spent gaming on phone daily:</label>
+                            <input type="number" id="phoneUseForPlayingGames" name="phoneUseForPlayingGames" min="0" max="24" value="0" onfocus="if(this.value=='0') this.value=''">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Can you live a day without your phone?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="liveADayWithoutPhone" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="liveADayWithoutPhone" value="No"> No</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Do you consider yourself addicted to your phone?</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="addictedToPhone" value="Yes" required> Yes</label>
+                                <label><input type="radio" name="addictedToPhone" value="No"> No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="submit-section">
+                    <button type="submit" id="submitBtn">
+                        <span class="btn-icon">📊</span>
+                        Analyze My Addiction Level
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="results" class="results hidden">
+            <h2>Assessment Results</h2>
+            <div id="resultsContent"></div>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Analyzing your data...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
